@@ -10,6 +10,8 @@ A simple weather application that allows users to check the current weather cond
 🔗 API Used
 🌐 Weather API → WeatherAPI.com
 
+ Visit the Weather App( https://srinjoyraychaudhuri.github.io/Weather--App/ )
+
 
 🛠 Technologies Used
 HTML 🏗️
