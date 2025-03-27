@@ -6,11 +6,14 @@ function getWeather() {
     fetch(url)
         .then(response => response.json())
         .then(data => {
+            console.log(data); // Debugging step
+
             document.getElementById("city-name").textContent = data.location.name;
             document.getElementById("temperature").textContent = data.current.temp_c;
             document.getElementById("condition").textContent = data.current.condition.text;
             document.getElementById("wind-speed").textContent = data.current.wind_kph;
             document.getElementById("humidity").textContent = data.current.humidity;
+
             document.getElementById("weather-result").classList.remove("hidden");
         })
         .catch(() => alert("Invalid location or API issue!"));

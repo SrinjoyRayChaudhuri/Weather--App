@@ -9,18 +9,23 @@
 </head>
 <body>
     <div class="container">
-        <h1>Weather App</h1>
-        <input type="text" id="location" placeholder="Enter location">
-        <button onclick="getWeather()">Check Weather</button>
+        <h1>🌤️ Weather App</h1>
+        <div class="search-box">
+            <input type="text" id="location" placeholder="Enter location">
+            <button onclick="getWeather()">🔍 Search</button>
+        </div>
         <div id="weather-result" class="hidden">
             <h2 id="city-name"></h2>
-            <p><i class="fas fa-temperature-high"></i> Temperature: <span id="temperature"></span>°C</p>
-            <p><i class="fas fa-cloud"></i> Condition: <span id="condition"></span></p>
-            <p><i class="fas fa-wind"></i> Wind Speed: <span id="wind-speed"></span> km/h</p>
-            <p><i class="fas fa-tint"></i> Humidity: <span id="humidity"></span>%</p>
+            <div class="weather-info">
+                <p><i class="fas fa-temperature-high"></i> Temperature: <span id="temperature"></span>°C</p>
+                <p><i class="fas fa-cloud"></i> Condition: <span id="condition"></span></p>
+                <p><i class="fas fa-wind"></i> Wind Speed: <span id="wind-speed"></span> km/h</p>
+                <p><i class="fas fa-tint"></i> Humidity: <span id="humidity"></span>%</p>
+            </div>
         </div>
     </div>
 
     <script src="script.js"></script> <!-- Linking JavaScript -->
 </body>
 </html>
+
